@@ -5,6 +5,7 @@ import PowerSVG from '@/assets/power.svg'
 import Image from 'next/image'
 import { Avatar } from '../Avatar'
 import { useSession, signOut } from "next-auth/react"
+import { Eye, Plus, Power } from '@phosphor-icons/react'
 export function Header() {
   const session = useSession()
   return (
@@ -19,10 +20,13 @@ export function Header() {
           </div>
           <div className={styles.headerActions}>
             <button type="button" className={styles.buttonAction}>
-              <Image src={EyeSVG} alt='Olhos'/>
+              <Plus size={24} color='#FF872C' />
+            </button>
+            <button type="button" className={styles.buttonAction}>
+              <Eye size={24} color='#FF872C' />
             </button>
             <button type="button" className={styles.buttonAction} onClick={() => signOut()}>
-              <Image src={PowerSVG} alt='Deligar'/>
+              <Power size={24} color='#FF872C' />
             </button>
           </div>
         </div>
