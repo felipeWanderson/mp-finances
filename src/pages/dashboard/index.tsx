@@ -23,9 +23,27 @@ export default function Dashboard() {
       <Header />
       <section className={styles.dashboardContent}>
         <div className={styles.cardsContainer}>
-          <Card titleCard='Entradas' amount={17400.00} type='INCOME'/>
+          <Card titleCard='Entradas' amount={17400.00} type='INCOME' />
           <Card titleCard='Saídas' amount={1259.00} type='OUTCOME' />
-          <Card titleCard='Total' amount={16141.00} type='TOTAL'/>
+          <Card titleCard='Total' amount={16141.00} type='TOTAL' />
+        </div>
+        <div className={styles.listContainer}>
+          <table>
+            <thead>
+              <th>Titulo</th>
+              <th>Preço</th>
+              <th>Categoria</th>
+              <th>Data</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="50%">Desenvolvimento de site</td>
+                <td>R$ 12.000,00</td>
+                <td>Venda</td>
+                <td>13/04/2021</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
     </main>

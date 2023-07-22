@@ -13,3 +13,20 @@
 
   gap: 32px;
 }
+
+.listContainer > table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.listContainer > table th {
+  text-align: justify;
+  padding: 1.25rem 2rem;
+}
+
+.listContainer > table td {
+  padding: 1.25rem 2rem;
+  background: var(--white);
+}
