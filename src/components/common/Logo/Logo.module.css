@@ -1,0 +1,10 @@
+.logo {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.logo span {
+  color: var(--white);
+  margin-left: 8px;
+}
