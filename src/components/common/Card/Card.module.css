@@ -1,0 +1,60 @@
+.cardContainer {
+  width: 22rem;
+  height: 8.5rem;
+
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 16px;
+}
+.cardContainerTotal {
+  width: 22rem;
+  height: 8.5rem;
+
+  background-color: var(--green);
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardHeaderTotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardHeader span {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cardHeaderTotal span {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--white)
+}
+
+.cardContent {
+  margin-top: 8px;
+}
+
+.cardAmount {
+  color: var(--gray-dark);
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+} 
+.cardAmountTotal {
+  color: var(--white);
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+} 

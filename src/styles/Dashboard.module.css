@@ -1,1 +1,15 @@
 
+.dashboardContent {
+  max-width: 70rem;
+  width: 100%;
+
+  margin: 0 auto;
+  margin-top: -90px;
+}
+
+.cardsContainer {
+  display: flex;
+  align-items: center;
+
+  gap: 32px;
+}
