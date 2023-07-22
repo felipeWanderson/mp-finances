@@ -15,11 +15,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding: 32px;
 }
 
 .buttonPrimary {
-  margin-top: 32px;
-
   width: 12.1875rem;
   height: 3rem;
   flex-shrink: 0;
@@ -34,4 +34,36 @@
   font-size: 1rem;
   font-style: normal;
   line-height: normal;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttonAction {
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.headerProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+}
+
+.headerProfile span {
+  color: var(--white)
 }
