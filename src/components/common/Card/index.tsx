@@ -8,6 +8,7 @@ interface CardProps {
   titleCard: string;
   amount: number;
   upadateAt?: string;
+  showValue: boolean;
   type: 'INCOME' | 'OUTCOME' | 'TOTAL';
 }
 
@@ -17,9 +18,10 @@ const ICONCARD = {
   TOTAL: TotalSVG
 }
 
-export function Card({ titleCard, type, amount, upadateAt }: CardProps) {
+export function Card({ titleCard, type, amount, upadateAt, showValue }: CardProps) {
 
   const amountFomatted = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(amount || 0)
+  const amountText = 'R$ ---------'
 
   const cardContainerClass = type !== 'TOTAL' ? styles.cardContainer : styles.cardContainerTotal
   const cardAmountClass = type !== 'TOTAL' ? styles.cardAmount : styles.cardAmountTotal
@@ -32,7 +34,7 @@ export function Card({ titleCard, type, amount, upadateAt }: CardProps) {
         <Image src={ICONCARD[type]} alt='' />
       </header>
       <div className={styles.cardContent}>
-        <p className={cardAmountClass}>{amountFomatted}</p>
+        <p className={cardAmountClass}>{showValue ? amountFomatted: amountText}</p>
         {upadateAt && <span className={styles.lastUpdate}>{upadateAt}</span>}
       </div>
     </div>
