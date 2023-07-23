@@ -5,9 +5,13 @@
   --gray-dark:  #2F323D;
   --white: #FFF;
   --green: #12A454;
+  --green-ligth: #33CC95;
+  --green-alpha: #7df68bcc;
   --orange: #FF872C;
   --blue:  #5636D3;
   --blue-ligth:  #6933FF;
+  --overlay-color: #0c0c0c33;
+  --red-light: #fa748ccc;
 }
 * {
   margin: 0;

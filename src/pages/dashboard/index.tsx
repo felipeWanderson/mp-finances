@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import logo from '../../../public/logo.svg'
 import styles from '@/styles/Dashboard.module.css'
 import { Header } from '@/components/Header'
 import { useEffect } from 'react';

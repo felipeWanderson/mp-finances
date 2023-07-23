@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { Avatar } from '../Avatar'
 import { useSession, signOut } from "next-auth/react"
 import { Eye, Plus, Power } from '@phosphor-icons/react'
+import { NewTransaction } from '../common/NewTransaction'
 export function Header() {
   const session = useSession()
   return (
@@ -19,9 +20,7 @@ export function Header() {
             </span>
           </div>
           <div className={styles.headerActions}>
-            <button type="button" className={styles.buttonAction}>
-              <Plus size={24} color='#FF872C' />
-            </button>
+            <NewTransaction />
             <button type="button" className={styles.buttonAction}>
               <Eye size={24} color='#FF872C' />
             </button>
